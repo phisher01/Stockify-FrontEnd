@@ -14,9 +14,18 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 400;
+
+  
   text-decoration: inherit;
+  color: #535bf2;
+  
+  
+}
+.links a{
+  color: grey;font-size:14px;
+  margin-bottom:  15px ;
+
 }
 a:hover {
   color: #535bf2;
@@ -65,4 +74,31 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.nav-link{
+  margin-right:40px
+}
+#supportHero{
+  background-color: #397dd0;
+  color: white;
+}
+#supportHero a{
+  text-decoration: underline;
+  color:white;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#supportHero input{
+  padding: 20px 50px;
+  border: none;
+  border-radius:10px ;
+  width: 100%;
+  font-size: 16px;
+  background-color: white;
 }
