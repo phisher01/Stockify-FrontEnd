@@ -33,7 +33,7 @@ console.log(userData)
     const getUserData=async()=>{
       try{
 
-    const response=  await axios.get(`http://localhost:8080/userProfile/${userId}`);
+    const response=  await axios.get(`https://stockify-backend-0khv.onrender.com/userProfile/${userId}`);
     console.log("user",response.data);
     setUserData(response.data);
 
@@ -46,7 +46,7 @@ console.log(userData)
   const getStocks=async()=>{
     try{
       
-      const response=  await axios.get(`http://localhost:8080/allStocks`);
+      const response=  await axios.get(`https://stockify-backend-0khv.onrender.com/allStocks`);
      
       
       setStocks(response.data.data);

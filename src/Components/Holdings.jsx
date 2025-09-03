@@ -36,7 +36,7 @@ const Holdings = ({ holdings, userId, setUser , invested, currVal }) => {
 
   const handleSell = async (stock) => {
     try {
-      const response = await axios.post("http://localhost:8080/sell", {
+      const response = await axios.post("https://stockify-backend-0khv.onrender.com/sell", {
         userId,
         stockId: stock._id,
       });

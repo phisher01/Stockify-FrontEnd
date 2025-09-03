@@ -26,7 +26,7 @@ const Login = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:8080/login", {
+      const res = await axios.post("https://stockify-backend-0khv.onrender.com/login", {
         email: email,
         password: password,
       });

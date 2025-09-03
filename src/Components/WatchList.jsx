@@ -62,7 +62,7 @@ const WatchList = ({ holdings, stocks,setStocks, userId, setUser,margin }) => {
   }
 
   try {
-    const { data } = await axios.post("http://localhost:8080/buy", {
+    const { data } = await axios.post("https://stockify-backend-0khv.onrender.com/buy", {
       userId,
       stockId: stock._id,
     });

@@ -28,7 +28,7 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:8080/signup", {
+      const res = await axios.post("https://stockify-backend-0khv.onrender.com/signup", {
         email: email,
         password: password,
         username: username,
