@@ -1,39 +1,37 @@
 import { Link } from "react-router-dom";
+
 export default function NavBar() {
-    return (
+  return (
+    <nav className="navbar navbar-expand-lg sticky-top border-bottom" style={{ backgroundColor: "#fff" }}>
+      <div className="container ">
+        <Link className="navbar-brand" to="/">
+          <img src="media/images/logo.svg" style={{ width: "30%"}} alt="Logo" />
+        </Link>
 
-
-        
-            <nav class="navbar navbar-expand-lg  sticky-top fixed-bottom border-bottom " style={{backgroundColor :"#fff"}}>
-                <div class="container p-2">
-                    <Link   class="navbar-brand" to="/"><img src="media/images/logo.svg" style={{width:"25%"}} alt="" /></Link>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <Link class="nav-link active" aria-current="page" to="/signup">Signup</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="/about">About</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="/product">Product </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="/pricing">Pricing </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="/support">Support</Link>
-                            </li>
-                            
-                           
-                        </ul>
-                        
-                    </div>
-                </div>
-            </nav>
-
-    
-
-    );
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          {/* Align menu to right using ms-auto */}
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/signup">Signup</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/login">Login</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/product">Product</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/pricing">Pricing</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/support">Support</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
